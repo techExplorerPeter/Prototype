@@ -1,0 +1,9 @@
+mainmenu "Cobblestone Configuration Menu"
+menu "Cobblestone Configuration"
+
+source "Cobblestone/CoreIntergration/Kconfig"
+source "Cobblestone/Middleware/Kconfig"
+source "Cobblestone/QM/Kconfig"
+source "Cobblestone/RTE/Kconfig"
+
+endmenu

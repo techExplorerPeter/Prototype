@@ -1,0 +1,7 @@
+menu "Cobblestone CoreIntergration Configuration"
+config COREINTERGRATION_CFG
+    bool "Do a full check of the FIT before using it"
+    default y
+    help
+        config Cobblestone CoreIntergration function
+endmenu

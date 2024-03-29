@@ -1,0 +1,7 @@
+menu "S32DS Configuration"
+config BSW_S32DS_GEN_CFG
+    bool "Do a full check of the FIT before using it"
+    default y
+    help
+        config bsw s32ds generate function
+endmenu

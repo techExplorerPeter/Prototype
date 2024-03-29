@@ -1,0 +1,8 @@
+mainmenu "Radar M7 Project Configuration Menu"
+menu "Radar M7 Project Configuration"
+
+source "BSW/Kconfig"
+source "Cobblestone/Kconfig"
+source "OEM/Kconfig"
+
+endmenu

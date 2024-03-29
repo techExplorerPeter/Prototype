@@ -1,0 +1,5 @@
+menu "BSW Configuration"
+
+source "BSW/S32DS/Kconfig"
+
+endmenu

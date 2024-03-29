@@ -1,0 +1,7 @@
+menu "QM Configuration"
+config QM_CFG
+    bool "Do a full check of the FIT before using it"
+    default y
+    help
+        config Cobblestone QM function
+endmenu

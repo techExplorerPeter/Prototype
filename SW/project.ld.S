@@ -34,9 +34,17 @@ SECTIONS
   *start.o (.text*)
   *(.text*)
  }
+  .rodata :
+ {
+  *(.rodata*)
+ }
+ .bss :
+ {
+  *(.bss*)
+ }
 
- _stack_end = START_ADDR + 0x1000;
- _stack_start = START_ADDR + 0x2000 - VTOR_ALIGNMENT;
+ _stack_end = .;
+ _stack_start = START_ADDR + 0x20000 - VTOR_ALIGNMENT;//0x2000 is total size of M7 core allocate
 
  /DISCARD/ : { *(.dynsym) }
  /DISCARD/ : { *(.dynstr*) }
